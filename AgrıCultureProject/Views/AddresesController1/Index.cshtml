@@ -1,0 +1,47 @@
+﻿@using EntityLayer.concrete;
+@model List<Address>;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLoyout.cshtml";
+}
+<h1>AddAddress</h1>
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Kişiler Listesi</h4>
+            <div class="table-responsive pt-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Açıklama 1</th>
+                            <th>Açıklama 2</th>
+                            <th>Açıklama 3</th>
+                            <th>Açıklama 4</th>
+                            <th>Konum Bilgilendirmesi</th>
+                            <th>Sil</th>
+                            <th>Düzenle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.AddressID</td>
+                                <td>@item.Description1</td>
+                                <td>@item.Description2</td>
+                                <td>@item.Description3</td>
+                                <td>@item.Description4</td>
+                                <td>@item.MapInfo</td>
+                                <td><a href="/AddresesController1/DeleteAdreses/@item.AddressID" onclick="return confirm('Silmek İstiyormusunuz?')" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AddresesController1/UpdateAdreses/@item.AddressID" class="btn btn-outline-primary">Düzenle</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/AddresesController1/AddAddress" class="btn btn-outline-primary">Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>

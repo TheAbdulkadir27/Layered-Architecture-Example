@@ -1,0 +1,11 @@
+﻿@using EntityLayer.concrete;
+@model List<SocialMedia>
+
+	<div class="w3l_header_right">
+    <div class="w3ls-social-icons text-left">
+	@foreach (var item in Model)
+    {
+        <a class="@item.Title" href="#"><i class="@item.icon"></i></a>
+    }
+	</div>
+</div>

@@ -1,0 +1,41 @@
+﻿@using EntityLayer.concrete;
+@model List<Team>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLoyout.cshtml";
+}
+ <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Takım Arkadaşlarım</h4>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                        <th>#</th>
+                        <th>TeamID</th>
+                        <th>PersonelAdı</th>
+                        <th>Başlık</th>
+                        <th>Sil</th>
+                        <th>Düzenle</th>    
+                        </tr>
+                      </thead>
+                      <tbody>
+                       @foreach (var item in Model)
+                        {
+                         <tr>
+                             <td class="py-1"><img src="~/MajesticAdmin-Free-Bootstrap-Admin-Template-master/template/images/faces/face1.jpg" alt="image"/></td>
+                             <td>@item.TeamID</td>
+                             <td>@item.PersonName</td>
+                             <td>@item.Title</td>
+                             <td><a href="/TeamController1/DeleteTeam/@item.TeamID" class="text-danger" onclick="return confirm('Silmek İstiyormusunuz')">Sil</a></td>
+                             <td><a href="/TeamController1/UpdateTeam/@item.TeamID" class="text-danger">Düzenle</a></td>
+                         </tr>   
+                        }
+                      </tbody>
+                    </table>
+                    <a href="/TeamController1/AddTeam" class="btn btn-outline-primary"> Takım Arkadaşı Ekle</a>
+                  </div>
+                </div>
+              </div>
+            </div>

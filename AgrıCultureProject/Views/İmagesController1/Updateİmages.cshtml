@@ -1,0 +1,31 @@
+﻿@using EntityLayer.concrete;
+@model İmage;
+@{
+    ViewData["Title"] = "Updateİmages";
+    Layout = "~/Views/Shared/_AdminLoyout.cshtml";
+}
+<h1>Resim Güncelle</h1>
+<div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Görsel Ekleyin</h4>
+                  <form class="forms-sample" method="post">
+                      @Html.HiddenFor(x=>x.İmageID)
+                    <div class="form-group">
+                      <label for="exampleInputName1">Başlık</label>
+                      <span asp-validation-for="Title" class="text-danger"></span>
+                      <input type="text" class="form-control" asp-for="Title" placeholder="Lütfen Bir Başlık Giriniz">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleTextarea1">Açıklama</label>
+                      <span asp-validation-for="Decription" class="text-danger"></span>
+                      <textarea class="form-control" asp-for="Decription" id="sexampleTextarea1" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">İmage Url</label>
+                      <span asp-validation-for="İmageUrl" class="text-danger"></span>
+                      <input type="text" class="form-control" asp-for="İmageUrl" placeholder="Lütfen Bir Görsel Yol Giriniz">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Güncelle</button>
+                  </form>
+                </div>
+                </div>

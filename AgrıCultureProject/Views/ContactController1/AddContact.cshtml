@@ -1,0 +1,29 @@
+﻿@using EntityLayer.concrete;
+@model Contact;
+@{
+    ViewData["Title"] = "AddContact";
+    Layout = "~/Views/Shared/_AdminLoyout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Kişi Ekle</h4>
+                  <form class="forms-sample" method="post">
+                    <div class="form-group">
+                      <label for="exampleInputName1">Adı</label>
+                       @Html.TextBoxFor(x=>x.Name,new{@class="form-control",@placeholder="Lütfen Adınızı Giriniz"});
+                    </div>
+                     <div class="form-group">
+                      <label for="exampleInputName1">Mail</label>
+                      <input type="email" class="form-control" asp-for="Mail" placeholder="Mail Adı Giriniz">
+                    </div>
+                     <div class="form-group">
+                      <label for="exampleInputName1">Message</label>
+                      <input type="text" class="form-control"  asp-for="Message" placeholder="Mesajı Giriniz">
+                    </div>
+                    <button type="submit" href="/ContactController1/Index" class="btn btn-outline-primary">Ekle</button>
+                  </form>
+                </div>
+              </div>
+            </div>

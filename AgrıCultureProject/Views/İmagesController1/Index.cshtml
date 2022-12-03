@@ -1,0 +1,45 @@
+﻿@using EntityLayer.concrete;
+@model List<İmage>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLoyout.cshtml";
+}
+<h1>İmages Listesi</h1>
+<div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">İmage</h4>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                        <th>#</th>
+                        <th>İmageID</th>
+                        <th>Başlık</th>
+                        <th>Açıklama</th>
+                        <th>Görsel Url</th>
+                        <th>Sil</th>
+                        <th>Düzenle</th>    
+                        </tr>
+                      </thead>
+                      <tbody>
+                       @foreach (var item in Model)
+                        {
+                         <tr>
+                             <td class="py-1"><img src="~/@item.İmageUrl" alt="image"/></td>
+                             <td>@item.İmageID</td>
+                             <td>@item.Title</td>
+                             <td>@item.Decription</td>
+                             <td>@item.İmageUrl</td>
+                             <td><a href="/İmagesController1/Deleteİmages/@item.İmageID" class="text-danger" onclick="return confirm('Silmek İstiyormusunuz')">Sil</a></td>
+                             <td><a href="/İmagesController1/Updateİmages/@item.İmageID" class="text-danger">Düzenle</a></td>
+                         </tr>   
+                        }
+                      </tbody>
+                    </table>
+                    <a href="/İmagesController1/Addİmages" class="btn btn-outline-primary"> İmages Ekle</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+

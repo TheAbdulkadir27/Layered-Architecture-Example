@@ -1,0 +1,599 @@
+﻿
+@{
+    Layout = null;
+}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	@await Component.InvokeAsync("_HeadPartial")
+<!-- header -->
+	<div class="header">
+		<div class="container">
+		 @await Component.InvokeAsync("TopAddressPartial")
+		 @await Component.InvokeAsync("SocialMediaPartial")
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+<!-- //header -->
+		<!--Slider-->
+		@await Component.InvokeAsync("NavbarPartial")
+		
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+						<!-- Modal1 -->
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>In Harvest</h4>
+										<img src="~/web/images/banner1.jpg" alt=" " class="img-responsive">
+										<h5>ENVIRONMENT & SUSTAINABILITY</h5>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Modal1 -->
+		<!--//Slider-->
+<!--//Header-->
+
+<!-- about -->
+	@await Component.InvokeAsync("AboutPartial")
+<!-- //about-bottom -->
+<!--sevices-->
+<div class="sevices-w3layouts" id="services">
+	<div class="container">
+	<h3 class="tittle">Our Services</h3>
+		<p class="heading-btm-w3ls">Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+		<div class="services-main">
+				<div class="col-md-3 sevices-w3layouts-grids wow fadeInUp animated" data-wow-delay=".5s">
+					<h5>Cropping</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipi est eligendi scing elit consectetur</p>
+					
+					<div class="sevices-w3layouts-img c1">
+						<i class="fa fa-pagelines" aria-hidden="true"></i>
+						<p>Lorem ipsum</p>
+					</div>
+				</div>
+				<div class="col-md-3 sevices-w3layouts-grids sevices-w3layouts-mdl wow fadeInUp animated" data-wow-delay=".5s">
+					<h5>Safety</h5>
+					<p>Consectetur adipi lorem ipsum dolor sit amet, est eligendi scing elit consectetur.</p>
+					
+					<div class="sevices-w3layouts-img c2">
+						<i class="fa fa-globe" aria-hidden="true"></i>
+						<p>Lorem ipsum</p>
+					</div>
+				</div>
+				<div class="col-md-3 sevices-w3layouts-grids sevices-w3layouts-mdl1 wow fadeInUp animated" data-wow-delay=".5s">
+					<h5>Environment</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipi est eligendi scing elit consectetur.</p>
+					
+					<div class="sevices-w3layouts-img c3">
+						<i class="fa fa-tree" aria-hidden="true"></i>
+						<p>Lorem ipsum</p>
+					</div>
+				</div>
+				<div class="col-md-3 sevices-w3layouts-grids wow fadeInUp animated" data-wow-delay=".5s">
+					<h5>Climate Change</h5>
+					<p>Consectetur adipi lorem ipsum dolor sit amet, est eligendi scing elit consectetur.</p>
+					
+					<div class="sevices-w3layouts-img c4">
+						<i class="fa fa-envira" aria-hidden="true"></i>
+						<p>Lorem ipsum</p>
+					</div>
+				</div>
+		</div>
+				<div class="clearfix"> </div>	
+	</div>
+</div>
+<!--//sevices-->
+<!-- team -->
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="tittle">Meet Our Team</h3>
+			<p class="heading-btm-w3ls">Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+			<div class="wthree_team_grids">
+				<div class="col-md-3 wthree_team_grid">
+					<div class="hovereffect">
+						<img src="~/web/images/t1.jpg" alt=" " class="img-responsive" />
+						<div class="overlay">
+							<h6>Lorem ipsum</h6>
+							<div class="rotate">
+								<p class="group1">
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</p>
+									<hr>
+									<hr>
+								<p class="group2">
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<h4>Max Payne</h4>
+					<p>Field Worker</p>
+				</div>
+				<div class="col-md-3 wthree_team_grid">
+					<div class="hovereffect">
+						<img src="~/web/images/t2.jpg" alt=" " class="img-responsive" />
+						<div class="overlay">
+							<h6>Lorem ipsum</h6>
+							<div class="rotate">
+								<p class="group1">
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</p>
+									<hr>
+									<hr>
+								<p class="group2">
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<h4>Michael Lii</h4>
+					<p>Field Worker</p>
+				</div>
+				<div class="col-md-3 wthree_team_grid">
+					<div class="hovereffect">
+						<img src="~/web/images/t3.jpg" alt=" " class="img-responsive" />
+						<div class="overlay">
+							<h6>Lorem ipsum</h6>
+							<div class="rotate">
+								<p class="group1">
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</p>
+									<hr>
+									<hr>
+								<p class="group2">
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<h4>Mark</h4>
+					<p>Field Worker</p>
+				</div>
+				<div class="col-md-3 wthree_team_grid">
+					<div class="hovereffect">
+						<img src="~/web/images/t4.jpg" alt=" " class="img-responsive" />
+						<div class="overlay">
+							<h6>Lorem ipsum</h6>
+							<div class="rotate">
+								<p class="group1">
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</p>
+									<hr>
+									<hr>
+								<p class="group2">
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<h4>John Cena</h4>
+					<p>Field Worker</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //team -->
+<!--blog -->
+<div class="blog" id="blog">
+	<div class="container">
+	<h3 class="tittle">Latest News</h3>
+	<p class="heading-btm-w3ls">Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+		<div class="blog-grid-w3-agileits">
+			<div class=" col-md-7 blog-img1-agileits-w3layouts">
+			<a  href="#" data-toggle="modal" data-target="#myModal2"></a>
+			</div>
+			<div class=" col-md-5 blog-info-w3layouts">
+				<h6> <a  href="#" data-toggle="modal" data-target="#myModal2">FURTHER DEVELOPMENT IN AGRICULTURE GROWTH</a></h6>
+				<div class="inner-info">
+					<a href="#" class="blog-text-w3ls bar">Lorem ipsum.</a><span>16/11/2016</span>
+					<p class="para-w3-agileits">Aenean pulvinar diam vel felis volutpat dictum. Aenean ac tellus suscipit sapien scelerisque tempus non mollis massa.</p>
+				</div>
+				<a  href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal2">Read More</a>
+			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="blog-grid-w3-agileits">
+			<div class=" col-md-5 blog-info-w3layouts blog-mid">
+				<h6><a  href="#" data-toggle="modal" data-target="#myModal3">KEEPING ON ADVANCING THE AGRICULTURE INDUSTRY</a></h6>
+				<div class="inner-info-mid">
+					<a href="#" class="blog-text-w3ls mid-bar">Lorem ipsum.</a><span>12/10/2016</span>
+					<p class="para-w3-agileits">Aenean pulvinar diam vel felis volutpat dictum. Aenean ac tellus suscipit sapien scelerisque tempus non mollis massa.</p>
+				</div>
+				<a  href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal3">Read More</a>
+			</div>
+			<div class=" col-md-7 blog-img2-agileits-w3layouts">
+			<a  href="#" data-toggle="modal" data-target="#myModal3"></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="blog-grid-w3-agileits">
+			<div class=" col-md-7 blog-img3-agileits-w3layouts">
+				<a  href="#" data-toggle="modal" data-target="#myModal4"></a>
+			</div>
+			<div class=" col-md-5 blog-info-w3layouts">
+				<h6><a  href="#" data-toggle="modal" data-target="#myModal4"> OUR FIRST STEPS ON THE MARKET AMONG AGRICULTURAL COMPANIES</a></h6>
+				<div class="inner-info">
+					<a href="#" class="blog-text-w3ls bar">Lorem ipsum.</a><span>06/8/2016</span>
+					<p class="para-w3-agileits">Aenean pulvinar diam vel felis volutpat dictum. Aenean ac tellus suscipit sapien scelerisque tempus non mollis massa.</p>
+				</div>
+				<a  href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal4">Read More</a>
+			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //blog -->
+						<!-- Modal2 -->
+						<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>In Harvest</h4>
+										<img src="~/web/images/b1.jpg" alt=" " class="img-responsive">
+										<h5>FURTHER DEVELOPMENT IN AGRICULTURE GROWTH</h5>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Modal2 -->
+						<!-- Modal3 -->
+						<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>In Harvest</h4>
+										<img src="~/web/images/b2.jpg" alt=" " class="img-responsive">
+										<h5>KEEPING ON ADVANCING THE AGRICULTURE INDUSTRY</h5>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Modal3 -->
+						<!-- Modal4 -->
+						<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>In Harvest</h4>
+										<img src="~/web/images/b3.jpg" alt=" " class="img-responsive">
+										<h5>OUR FIRST STEPS ON THE MARKET AMONG AGRICULTURAL COMPANIES</h5>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Modal4 -->
+ <!--/gallery-->
+ <div class="gallery" id="gallery">
+	<div class="container">
+	<h3 class="tittle">Our Gallery</h3>
+	<p class="heading-btm-w3ls">Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+		<div class="agile_gallery_grids w3-agile">
+				<ul class="clearfix demo">
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g1.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+									<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g2.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g3.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+							<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g4.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g5.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+									<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g6.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+									<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g7.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+									<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g8.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g9.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+									<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g10.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g11.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+									<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="~/web/images/g12.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+									<h4>In <span>Harvest</span></h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</div>
+</div>
+<!--//gallery-->
+<!--footer-->
+<div class="contact-agile" id="contact">
+			<div class="container">
+				<h3 class="tittle">Contact Us</h3>
+		<p class="heading-btm-w3ls">Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+				<div class="col-md-3 contact-left">
+					<h4>Our Address</h4>
+					<p>1143 New Hampshire Ave NW,</p>
+					<p>Washington,</p>
+					<p>DC 20037, USA</p>
+					<h4>Phone</h4>
+					<p>+(010) 221 918 811</p>
+
+				</div>
+				<div class="col-md-9 contact-middle">
+					<h2>Say Hello</h2>
+					<form action="#" method="post">
+					<div class="form-agileinfo">
+						<p>Name</p>
+						<input type="text" name="your name" placeholder="Your name" required="" />
+						<p>Email</p>
+						<input type="email" name="your email" placeholder="Your email" required="" />
+					</div>
+					<div class="form-agileits-w3layouts">
+					<p>Comments</p>
+						<textarea  name="your message" placeholder="Your message" required="" ></textarea>
+							<input type="submit"   value="SEND MESSAGE">
+					</div>
+					<div class="clearfix"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="map-w3ls">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6209.852593501853!2d-77.0416869731965!3d38.902800718279195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae69b9ad9dbd5ebf!2sRenaissance+Washington%2C+DC+Dupont+Circle+Hotel!5e0!3m2!1sen!2sin!4v1479208161830"></iframe>
+		</div>
+			    <div class="bottom-social-w3ls w3ls-social-icons">
+					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+					<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+			<div class="copy">
+		        <p>© 2017 In Harvest . All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
+		    </div>
+<!--/footer -->
+
+<!-- js -->
+<script type="text/javascript" src="~/web/js/jquery-2.1.4.min.js"></script>
+<!--gallery-js -->
+<script src="~/web/js/jquery.picEyes.js"></script>
+				<script>
+					$(function(){
+						//picturesEyes($('.demo li'));
+						$('.demo li').picEyes();
+					});
+				</script>
+<!--//gallery-js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="~/web/js/move-top.js"></script>
+<script type="text/javascript" src="~/web/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!--light-box-files -->
+<script src="~/web/js/jquery.chocolat.js"></script>
+<!--//light-box-files -->
+		<script type="text/javascript">
+		$(function() {
+			$('.gallery a').Chocolat();
+		});
+		</script>
+<!-- //js -->
+<script src="~/web/js/responsiveslides.min.js"></script>
+							<script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 3
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:true,
+									nav:true,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							 </script>
+
+		
+		<!--search-bar-->
+		<script src="~/web/js/main.js"></script>	
+<!--//search-bar-->
+<!--tabs-->
+<script src="~/web/js/easy-responsive-tabs.js"></script>
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script>
+<!--//tabs-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	
+	
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<script type="text/javascript" src="~/web/js/bootstrap-3.1.1.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿@using EntityLayer.concrete;
+@model Team;
+@{
+    ViewData["Title"] = "AddTeam";
+    Layout = "~/Views/Shared/_AdminLoyout.cshtml";
+}
+<div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Takım Arkadaşı Ekle</h4>
+                  <form class="forms-sample" method="post">
+                    <div class="form-group">
+                      <label for="exampleInputName1">Personel Adı</label>
+                      <span asp-validation-for="PersonName" class="text-danger"></span>
+                      <input type="text" class="form-control" id="exampleInputName1" asp-for="PersonName"  placeholder="Personel Adı Giriniz">
+                    </div>
+                     <div class="form-group">
+                      <label for="exampleInputName1">Görev</label>
+                      <span asp-validation-for="Title" class="text-danger"></span>
+                      <input type="text" class="form-control" id="exampleInputName1" asp-for="Title" placeholder="Görev Adı Giriniz">
+                    </div>
+                     <div class="form-group">
+                      <label for="exampleInputName1">Görsel Yolu</label>
+                      <input type="text" class="form-control" id="exampleInputName1" asp-for="İmageUrl" placeholder="Görsel Yolunu Giriniz">
+                    </div>
+                     <div class="form-group">
+                      <label for="exampleInputName1">Facebook Url</label>
+                      <input type="text" class="form-control" id="exampleInputName1" asp-for="FacebookUrl" placeholder="Facebook Url Giriniz">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3">TwitterUrl</label>
+                      <input type="text" class="form-control" id="exampleInputEmail3" asp-for="TwitterUrl" placeholder="Twitter Url Giriniz">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleTextarea1">WebsiteUrl</label>
+                      <input type="text" class="form-control" id="exampleInputEmail3" asp-for="WebSiteUrl" placeholder="WebSite Url Giriniz">
+                    </div>
+                    <button type="submit" href="/TeamController1/Index" class="btn btn-outline-primary">Ekle</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
